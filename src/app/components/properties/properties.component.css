@@ -1,0 +1,16 @@
+.properties-panel {
+  width: 250px;
+  padding: 16px;
+  border-right: 1px solid #ccc;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+<div
+  class="sidebar"
+  cdkDropList
+  id="sidebarList"
+  [cdkDropListData]="widgets"
+  [cdkDropListConnectedTo]="['canvasList']"
+>
+
+  <div
+    *ngFor="let widget of widgets"
+    cdkDrag
+    [cdkDragData]="widget"
+    class="widget-item"
+  >
+    {{ widget }}
+  </div>
+
+</div>

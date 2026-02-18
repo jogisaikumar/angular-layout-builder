@@ -1,0 +1,14 @@
+.sidebar {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+}
+
+.widget-item {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #aaa;
+  cursor: move;
+  background: #f5f5f5;
+}
+

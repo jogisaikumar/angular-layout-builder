@@ -1,0 +1,22 @@
+.widget {
+  position: absolute;
+  border: 1px solid #999;
+  padding: 8px;
+  background: white;
+  cursor: move;
+}
+
+.container-box {
+  height: 100%;
+  background: #eaeaea;
+}
+.resize-handle {
+  width: 12px;
+  height: 12px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+

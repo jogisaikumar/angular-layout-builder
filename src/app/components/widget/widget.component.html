@@ -1,0 +1,44 @@
+<div
+  class="widget"
+  cdkDrag
+  [cdkDragBoundary]="'.canvas'"
+  (cdkDragMoved)="onDragMove($event)"
+  [ngStyle]="{
+    left: item.x + 'px',
+    top: item.y + 'px',
+    width: item.width + 'px',
+    height: item.height + 'px'
+  }"
+>
+
+
+  <ng-container [ngSwitch]="item.type">
+
+    <input *ngSwitchCase="'input'" placeholder="Enter text" />
+
+    <button *ngSwitchCase="'button'">Button</button>
+
+    <select *ngSwitchCase="'dropdown'">
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+
+    <div *ngSwitchCase="'radio'">
+      <label><input type="radio" name="r"> Yes</label>
+      <label><input type="radio" name="r"> No</label>
+    </div>
+
+    <div *ngSwitchCase="'container'" class="container-box">
+      Container
+    </div>
+
+  </ng-container>
+
+  <div
+    class="resize-handle"
+    (mousedown)="startResize($event)"
+  ></div>
+
+</div>
+
+

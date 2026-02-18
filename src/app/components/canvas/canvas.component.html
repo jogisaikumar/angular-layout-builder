@@ -1,0 +1,16 @@
+<div
+  class="canvas"
+  cdkDropList
+  id="canvasList"
+  [cdkDropListSortingDisabled]="true"
+  [cdkDropListConnectedTo]="['sidebarList']"
+  (cdkDropListDropped)="drop($event)"
+>
+
+  <app-widget
+    *ngFor="let item of layout"
+    [item]="item"
+  >
+  </app-widget>
+
+</div>

@@ -1,2 +1,24 @@
+<div cdkDropListGroup class="app-container">
 
-<router-outlet />
+  <!-- LEFT PANEL -->
+  <ng-container *ngIf="!selectedWidget; else propertiesPanel">
+    <app-sidebar></app-sidebar>
+  </ng-container>
+
+  <ng-template #propertiesPanel>
+    <app-properties
+      [item]="selectedWidget"
+      (save)="onSave()"
+    ></app-properties>
+  </ng-template>
+
+  <!-- CANVAS -->
+  <app-canvas
+    [layout]="layout"
+    (widgetDropped)="onWidgetDropped($event)"
+    (widgetSelected)="onWidgetSelected($event)"
+  ></app-canvas>
+
+</div>
+
+

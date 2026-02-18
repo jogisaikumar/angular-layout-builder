@@ -1,0 +1,44 @@
+<div class="properties-panel">
+
+  <h3>Properties</h3>
+
+  <p><strong>Type:</strong> {{ item.type }}</p>
+
+  <label>
+    X:
+    <input type="number" [(ngModel)]="item.x" />
+  </label>
+
+  <label>
+    Y:
+    <input type="number" [(ngModel)]="item.y" />
+  </label>
+
+  <label>
+    Width:
+    <input type="number" [(ngModel)]="item.width" />
+  </label>
+
+  <label>
+    Height:
+    <input type="number" [(ngModel)]="item.height" />
+  </label>
+
+  <div *ngIf="item.type === 'input'">
+    <label>
+      Placeholder:
+      <input type="text" [(ngModel)]="item.properties.placeholder" />
+    </label>
+  </div>
+
+  <div *ngIf="item.type === 'button'">
+    <label>
+      Button Text:
+      <input type="text" [(ngModel)]="item.properties.label" />
+    </label>
+  </div>
+
+  <button (click)="save.emit()">Save</button>
+
+</div>
+
