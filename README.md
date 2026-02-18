@@ -1,27 +1,58 @@
-# AngularLayoutBuilder
+Angular Layout Builder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+A lightweight drag-and-drop Layout Builder built using **Angular 17** and **Angular CDK**.
 
-## Development server
+This application allows users to drag widgets from a sidebar into a canvas, position them freely, resize them, configure properties, and save them — maintaining layout state in memory.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ Tech Stack
 
-## Code scaffolding
+- Angular 17 (Standalone Components)
+- TypeScript
+- Angular CDK (Drag & Drop)
+- Custom Resizable Directive
+- Simple CSS (No UI frameworks)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Prerequisites
 
-## Running unit tests
+- Node.js v20+
+- npm v9+
+- Angular CLI (optional)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+Step 1 — Clone Repository
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+git clone https://github.com/jogisaikumar/angular-layout-builder.git
+cd angular-layout-builder
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+ Step 2 — Install Dependencies
+
+
+npm install
+
+
+## Step 3 — Run Application
+
+npm start
+or
+ng serve
+
+
+Application runs at:
+
+```
+http://localhost:4200
+```
+
+---
+ Angular Version
+
+Created using Angular 17 with standalone architecture.
+
+Check version in `package.json`:
+
+"@angular/core": "^17.x.x"
