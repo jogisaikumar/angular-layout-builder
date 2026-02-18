@@ -1,8 +1,7 @@
 <div cdkDropListGroup class="app-container">
 
-  <!-- LEFT PANEL -->
   <ng-container *ngIf="!selectedWidget; else propertiesPanel">
-    <app-sidebar></app-sidebar>
+    <app-sidebar (saveSuccess)="onSave()"></app-sidebar>
   </ng-container>
 
   <ng-template #propertiesPanel>
@@ -12,12 +11,16 @@
     ></app-properties>
   </ng-template>
 
-  <!-- CANVAS -->
   <app-canvas
     [layout]="layout"
     (widgetDropped)="onWidgetDropped($event)"
     (widgetSelected)="onWidgetSelected($event)"
   ></app-canvas>
+
+  <app-success-banner
+  *ngIf="showSuccess"
+  message="Layout Saved Successfully!"
+></app-success-banner>
 
 </div>
 

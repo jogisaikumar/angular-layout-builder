@@ -1,0 +1,28 @@
+.banner {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background-color: #28a745;
+  color: white;
+  
+  padding: 12px 25px;
+  border-radius: 8px;
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  animation: slideDown 0.3s ease;
+  z-index: 2000;
+}
+
+.tick {
+  font-size: 18px;
+}
+
+

@@ -26,7 +26,7 @@ export class WidgetComponent {
 
 startResize(event: MouseEvent) {
 
-  event.stopPropagation(); // prevent drag
+  event.stopPropagation(); //prevent drag
 
   const startX = event.clientX;
   const startY = event.clientY;

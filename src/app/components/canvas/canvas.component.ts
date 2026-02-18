@@ -37,8 +37,6 @@ export class CanvasComponent {
       saved: false,
       children: widgetType === 'container' ? [] : null
     };
-
-    // 🔥 Instead of pushing here:
     this.widgetDropped.emit(newItem);
 
   } else {
